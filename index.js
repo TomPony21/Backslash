@@ -13,6 +13,14 @@ server.register(fastifyBlipp);
 server.register(fastifySensible);
 server.register(apiRoutes);
 
+server.setErrorHandler((error, _request, reply) => {
+    fastify.log.error(error);
+      reply.status(500).send({
+      error: 'Internal Server Error',
+      message: error.message,
+    });
+  });
+
 const start = async () => {
     try {
         const data = await initializeGraphData();

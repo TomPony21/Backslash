@@ -1,4 +1,4 @@
-import { rawGraphData, graph, allRoutes } from '../Logics/memoryDatabase.js';
+import { graph, allRoutes } from '../Logics/memoryDatabase.js';
 import { publicRoutesQuery, endSinkRouteQuery, hasVulnerabilitiesRoutesQuery } from '../Logics/routesService.js';
 import { getRelevantRoutes } from '../Logics/utils.js';
 
