@@ -21,6 +21,18 @@ Route Filtering: Every time that I need a new type of operand (i.e.,"OR"), I hav
 Testing: Add a comprehensive suite of unit and integration tests.
 
 
+## `getRelevantRoutes`
+Its a Tool for filtering routes based on certain criteria.
+
+### `Parameters`:
+nodes: An array of nodes involved in the routes.<br />
+routes: An array of routes to filter.<br />
+options: An object containing:<br />
+            index: Specifies which nodes in the routes should be examined.<br />
+            condition: A function or operand that defines the filtering logic.
+
+
+
 ## `routes`
 
 This set of routes deals with fetching various kinds of route data derived from a graph. Each route performs a different query.
